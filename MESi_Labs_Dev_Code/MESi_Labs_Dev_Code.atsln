@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "MESi_Labs_Dev_Code", "MESi_Labs_Dev_Code\MESi_Labs_Dev_Code.cppproj", "{640AE558-15D4-4F8D-A2CC-EBBFA026BE4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Release|ARM = Release|ARM
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{640AE558-15D4-4F8D-A2CC-EBBFA026BE4F}.Debug|ARM.ActiveCfg = Debug|ARM
+		{640AE558-15D4-4F8D-A2CC-EBBFA026BE4F}.Debug|ARM.Build.0 = Debug|ARM
+		{640AE558-15D4-4F8D-A2CC-EBBFA026BE4F}.Release|ARM.ActiveCfg = Release|ARM
+		{640AE558-15D4-4F8D-A2CC-EBBFA026BE4F}.Release|ARM.Build.0 = Release|ARM
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

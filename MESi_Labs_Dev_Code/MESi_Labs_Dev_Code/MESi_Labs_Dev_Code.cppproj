@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>6.2</ProjectVersion>
+    <ToolchainName>com.Atmel.ARMGCC.CPP</ToolchainName>
+    <ProjectGuid>{640ae558-15d4-4f8d-a2cc-ebbfa026be4f}</ProjectGuid>
+    <avrdevice>ATSAM3X8E</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>MESi_Labs_Dev_Code</AssemblyName>
+    <Name>MESi_Labs_Dev_Code</Name>
+    <RootNamespace>MESi_Labs_Dev_Code</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <UncachedRange />
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <BootSegment>2</BootSegment>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.17.0" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <preserveEEPROM>true</preserveEEPROM>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <ArmGccCpp>
+  <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+  <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+  <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+  <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+  <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+  <armgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__SAM3X8E__</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x003e</Value>
+      <Value>USBCON</Value>
+      <Value>USB_MANUFACTURER="\"Unknown\""</Value>
+      <Value>USB_PRODUCT="\"Arduino Due\""</Value>
+      <Value>ARDUINO=155</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=84000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__SAM__</Value>
+    </ListValues>
+  </armgcc.compiler.symbols.DefSymbols>
+  <armgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value></Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include/</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/tools/g++_arm_none_eabi/arm_none_eabi/include/</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/tools/g++_arm_none_eabi/arm-none-eabi/include</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/system/CMSIS/CMSIS/Include/</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/system/libsam/include</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/system/libsam</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/system/CMSIS/Device/ATMEL/</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino Sketches/libraries</Value>
+      <Value>C:/Program Files (x86)/Visual Micro/Visual Micro for Arduino/Micro Platforms/default/debuggers</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Due_RTC/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Due_RTC</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/RTC_Ada/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/RTC_Ada</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Adafruit_NeoPixel/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Adafruit_NeoPixel</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Scheduler/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Scheduler</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SD_Ada/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SD_Ada</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries/SPI/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries/SPI</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries/Wire/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries/Wire</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/DHT/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/DHT</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SFE_TSL2561/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SFE_TSL2561</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/variants/arduino_due_x</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/cores/arduino</Value>
+    </ListValues>
+  </armgcc.compiler.directories.IncludePaths>
+  <armgcc.compiler.optimization.level>Optimize (-O1)</armgcc.compiler.optimization.level>
+  <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
+  <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+  <armgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__SAM3X8E__</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x003e</Value>
+      <Value>USBCON</Value>
+      <Value>USB_MANUFACTURER="\"Unknown\""</Value>
+      <Value>USB_PRODUCT="\"Arduino Due\""</Value>
+      <Value>ARDUINO=155</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=84000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__SAM__</Value>
+    </ListValues>
+  </armgcccpp.compiler.symbols.DefSymbols>
+  <armgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value></Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include/</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/tools/g++_arm_none_eabi/arm_none_eabi/include/</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/tools/g++_arm_none_eabi/arm-none-eabi/include</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/system/CMSIS/CMSIS/Include/</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/system/libsam/include</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/system/libsam</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/system/CMSIS/Device/ATMEL/</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino Sketches/libraries</Value>
+      <Value>C:/Program Files (x86)/Visual Micro/Visual Micro for Arduino/Micro Platforms/default/debuggers</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Due_RTC/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Due_RTC</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/RTC_Ada/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/RTC_Ada</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Adafruit_NeoPixel/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Adafruit_NeoPixel</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Scheduler/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Scheduler</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SD_Ada/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SD_Ada</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries/SPI/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries/SPI</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries/Wire/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries/Wire</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/DHT/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/DHT</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SFE_TSL2561/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SFE_TSL2561</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/variants/arduino_due_x</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/cores/arduino</Value>
+    </ListValues>
+  </armgcccpp.compiler.directories.IncludePaths>
+  <armgcccpp.compiler.optimization.level>Optimize (-O1)</armgcccpp.compiler.optimization.level>
+  <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</armgcccpp.compiler.optimization.DebugLevel>
+  <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
+  <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
+  <armgcccpp.linker.miscellaneous.LinkerFlags>-Tsam3x8e_flash.ld</armgcccpp.linker.miscellaneous.LinkerFlags>
+  <armgcccpp.assembler.debugging.DebugLevel>Default (-g)</armgcccpp.assembler.debugging.DebugLevel>
+  <armgcccpp.preprocessingassembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcccpp.preprocessingassembler.general.IncludePaths>
+  <armgcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.preprocessingassembler.debugging.DebugLevel>
+</ArmGccCpp>
+    </ToolchainSettings>
+    <VMSETTING_IncludePaths>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/cores/arduino;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/variants/arduino_due_x;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries;C:/Program Files (x86)/Visual Micro/Visual Micro for Arduino/Micro Platforms/default/debuggers;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino Sketches/libraries;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/system/CMSIS/Device/ATMEL/;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/system/libsam;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/system/libsam/include;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/system/CMSIS/CMSIS/Include/;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/tools/g++_arm_none_eabi/arm-none-eabi/include;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/tools/g++_arm_none_eabi/arm_none_eabi/include/;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include/;;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/DHT;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/DHT/utility;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Adafruit_NeoPixel;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Adafruit_NeoPixel/utility;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Scheduler;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Scheduler/utility;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SD/src;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SD/src/utility;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SD_Ada;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SD_Ada/utility;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries/SPI;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries/SPI/utility;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries/Wire;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries/Wire/utility;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Due_RTC;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Due_RTC/utility;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/RTC_Ada;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/RTC_Ada/utility;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SFE_TSL2561;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SFE_TSL2561/utility;</VMSETTING_IncludePaths>
+    <VisualMicroSettings>
+      <VisualMicroSettings xmlns="">
+        <arduino.upload.port>COM3</arduino.upload.port>
+      </VisualMicroSettings>
+    </VisualMicroSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <ArmGccCpp>
+  <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+  <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+  <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+  <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+  <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+  <armgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__SAM3X8E__</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x003e</Value>
+      <Value>USBCON</Value>
+      <Value>USB_MANUFACTURER="\"Unknown\""</Value>
+      <Value>USB_PRODUCT="\"Arduino Due\""</Value>
+      <Value>ARDUINO=155</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=84000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__SAM__</Value>
+    </ListValues>
+  </armgcc.compiler.symbols.DefSymbols>
+  <armgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value></Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include/</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/tools/g++_arm_none_eabi/arm_none_eabi/include/</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/tools/g++_arm_none_eabi/arm-none-eabi/include</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/system/CMSIS/CMSIS/Include/</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/system/libsam/include</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/system/libsam</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/system/CMSIS/Device/ATMEL/</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino Sketches/libraries</Value>
+      <Value>C:/Program Files (x86)/Visual Micro/Visual Micro for Arduino/Micro Platforms/default/debuggers</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Due_RTC/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Due_RTC</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/RTC_Ada/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/RTC_Ada</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Adafruit_NeoPixel/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Adafruit_NeoPixel</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Scheduler/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Scheduler</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SD_Ada/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SD_Ada</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries/SPI/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries/SPI</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries/Wire/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries/Wire</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/DHT/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/DHT</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SFE_TSL2561/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SFE_TSL2561</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/variants/arduino_due_x</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/cores/arduino</Value>
+    </ListValues>
+  </armgcc.compiler.directories.IncludePaths>
+  <armgcc.compiler.optimization.level>Optimize (-O1)</armgcc.compiler.optimization.level>
+  <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
+  <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+  <armgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__SAM3X8E__</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x003e</Value>
+      <Value>USBCON</Value>
+      <Value>USB_MANUFACTURER="\"Unknown\""</Value>
+      <Value>USB_PRODUCT="\"Arduino Due\""</Value>
+      <Value>ARDUINO=155</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=84000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__SAM__</Value>
+    </ListValues>
+  </armgcccpp.compiler.symbols.DefSymbols>
+  <armgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value></Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include/</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/tools/g++_arm_none_eabi/arm_none_eabi/include/</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/tools/g++_arm_none_eabi/arm-none-eabi/include</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/system/CMSIS/CMSIS/Include/</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/system/libsam/include</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/system/libsam</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/system/CMSIS/Device/ATMEL/</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino Sketches/libraries</Value>
+      <Value>C:/Program Files (x86)/Visual Micro/Visual Micro for Arduino/Micro Platforms/default/debuggers</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Due_RTC/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Due_RTC</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/RTC_Ada/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/RTC_Ada</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Adafruit_NeoPixel/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Adafruit_NeoPixel</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Scheduler/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Scheduler</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SD_Ada/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SD_Ada</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries/SPI/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries/SPI</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries/Wire/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries/Wire</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/DHT/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/DHT</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SFE_TSL2561/utility</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SFE_TSL2561</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/variants/arduino_due_x</Value>
+      <Value>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/cores/arduino</Value>
+    </ListValues>
+  </armgcccpp.compiler.directories.IncludePaths>
+  <armgcccpp.compiler.optimization.level>Optimize (-O1)</armgcccpp.compiler.optimization.level>
+  <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</armgcccpp.compiler.optimization.DebugLevel>
+  <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
+  <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
+  <armgcccpp.linker.miscellaneous.LinkerFlags>-Tsam3x8e_flash.ld</armgcccpp.linker.miscellaneous.LinkerFlags>
+  <armgcccpp.assembler.debugging.DebugLevel>Default (-g)</armgcccpp.assembler.debugging.DebugLevel>
+  <armgcccpp.preprocessingassembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3xa\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcccpp.preprocessingassembler.general.IncludePaths>
+  <armgcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.preprocessingassembler.debugging.DebugLevel>
+</ArmGccCpp>
+    </ToolchainSettings>
+    <VMSETTING_IncludePaths>C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/cores/arduino;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/variants/arduino_due_x;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries;C:/Program Files (x86)/Visual Micro/Visual Micro for Arduino/Micro Platforms/default/debuggers;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino Sketches/libraries;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/system/CMSIS/Device/ATMEL/;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/system/libsam;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/system/libsam/include;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/system/CMSIS/CMSIS/Include/;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/tools/g++_arm_none_eabi/arm-none-eabi/include;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/tools/g++_arm_none_eabi/arm_none_eabi/include/;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include/;;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/DHT;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/DHT/utility;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Adafruit_NeoPixel;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Adafruit_NeoPixel/utility;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Scheduler;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Scheduler/utility;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SD/src;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SD/src/utility;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SD_Ada;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SD_Ada/utility;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries/SPI;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries/SPI/utility;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries/Wire;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/hardware/arduino/sam/libraries/Wire/utility;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Due_RTC;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/Due_RTC/utility;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/RTC_Ada;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/RTC_Ada/utility;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SFE_TSL2561;C:/Users/Cody/Google Drive/MESi Labs/Software/Arduino IDE/Arduino-1.5.5-r2/libraries/SFE_TSL2561/utility;</VMSETTING_IncludePaths>
+    <VisualMicroSettings>
+      <VisualMicroSettings xmlns="">
+        <arduino.upload.port>COM3</arduino.upload.port>
+      </VisualMicroSettings>
+    </VisualMicroSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Constants.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Error_List.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MESi_Labs_Dev_Code.ino">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Pins.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Visual Micro\.MESi_Labs_Dev_Code.vsarduino.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Visual Micro\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All_Globals.ino">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Debug_Code.ino">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="EEPROM.ino">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="LED_Code.ino">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="RTC_Code.ino">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="SD_Code.ino">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Sensor_Code.ino">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Startup_Code.ino">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="XBee_Code.ino">
+      <SubType>compile</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
